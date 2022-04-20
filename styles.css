@@ -97,6 +97,10 @@ header{
 
 }
 
+.info > p a{
+    color: #0000ee;
+}
+
 header .user img{
     height: 17rem;
     width: 17rem;
