@@ -4,306 +4,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
     <title>Prince Darko</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+     
 </head>
 <body>
+
     <header>
-        <nav>
-            <small>PRINCE DARKO</small>
+        <div class="user">
+            <img src="old/img/avi.jpg" alt="">
+            <h3 class="name">Prince Darko </h3>
+            <p class="post"> back end developer</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#education">education</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <section class="header">
-            <div class="row">
-                <div class="col-md-4 imgC">
-                  <img src="./img/avi.jpg" alt="prince">
-                </div>
-                <div class="col-md-8 cc">
-                  <div class="intro">
-                      <p>Hello!  I'm <strong>Darko Prince Acquah</strong> a backend engineer. I do frontend too with the help 
-                          of angular which further leads me to building mobile apps when ionic smiles at me :)
-                      </p>
-                  </div>
-                </div>
-                
-              </div>
-        </section>
 
-        <section class="knowledge">
-            <p class="titles">Knowledge</p>
-            <div class="kcontainer">
-                <div class="row">
-                    <div class="col-md-6">
-                      <ul>
-                          <li>Node.js</li>
-                          <li>Angular</li>
-                          <li>Ionic</li>
-                          <li>Django</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <ul>
-                            <li>Typescript/Javascript</li>
-                            <li>Python</li>
-                        </ul>
-                      </div>
-                </div>
-            </div>
-           
-        </section>
-
-        <section class="works">
-            <p class="titles">Projects</p>
-            <div class="row">
-              <div class="col-md-6 cprojects">
-                <div>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./img/memz/1.png" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/memz/2.png" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/memz/3.png" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/memz/4.png" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                    
-                      </div>
-                      <h4>MemBank</h4>
-                      <p>Ionic || Angular || Node.js || Postgress || Nest.js  </p>
-                      <p class="visit">
-                          <a href="https://github.com/PrinceAcquahDarko/memBank#readme" class="btn btn-outline btn-sm">GitHub</a>
-                          <a  href="https://mbank.vercel.app/" class="btn btn-outline btn-sm">Visit Link</a>
-                            
-                    </p>
-                </div>
-              </div>
-             
-
-              <div class="col-md-6 cprojects">
-                <div>
-                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                      </div>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="./img/school/7.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./img/school/8.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./img/school/9.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./img/school/10.png" class="d-block w-100" alt="...">
-                        </div>
-                      </div>
-                   
-                    </div>
-                    <h4>School M System</h4>
-                    <p>Typescript || Angular || Node.js || Mongodb || Express</p>
-                    <p class="visit">
-                      <a href="https://github.com/PrinceAcquahDarko/BackEnd_SMA.git" class="btn btn-outline btn-sm">GitHub</a>
-                      <a  href="https://sma-front-end.vercel.app/login" class="btn btn-outline btn-sm">Visit Link</a>
-
-                      </p>
-                </div>
-              </div>
-              </div>
-             
-              <div class="row">
-                <div class="col-md-6 cprojects">
-                  <div>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./img/hos/2 (1).png" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/hos/2 (2).png" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/hos/2 (3).png" class="d-block w-100" alt="...">
-                          </div>
-  
-                          <div class="carousel-item">
-                            <img src="./img/hos/2 (4).png" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                      
-                      </div>
-                      <h4>Hospital M System</h4>
-                      <p>Typescript || Angular || Node.js || Mongodb || Express  </p>
-                      <p class="visit">
-                        <a href="https://github.com/PrinceAcquahDarko/HMA.git" class="btn btn-outline btn-sm">GitHub</a>
-                        <a href="https://hs-m.vercel.app/home" class="btn btn-outline btn-sm">Visit Link</a>
-  
-                        </p>
-                  </div>
-                </div>
-                <div class="col-md-6 cprojects">
-                    <div>
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="./img/evgweb/1.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./img/evgweb/2.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./img/evgweb/3.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./img/evgweb/4.png" class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                        
-                          </div>
-                          <h4>Online V System</h4>
-                          <p>Typescript || Angular || Node.js || Mongodb || Express  </p>
-                          <p class="visit">
-                              <a href="https://github.com/PrinceAcquahDarko/e_voting_backend.git" class="btn btn-outline btn-sm">GitHub</a>
-                              <a  href="https://evg.vercel.app/" class="btn btn-outline btn-sm">Visit Link</a>
-                                
-                        </p>
-                    </div>
-                  </div>
-            </div>
-            <div class="row">
-             
-                <div class="col-md-6 cprojects">
-                    <div>
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="./img/evgm/1.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./img/evgm/2.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./img/evgm/3.png" class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                       
-                          </div>
-                        <h4>Online VS(mobile)</h4>
-                        <p>Typescript || Angular || Node.js || Mongodb || Express || Ionic</p>
-                        <p class="visit">
-                            <a href="https://github.com/PrinceAcquahDarko/EvoteIonic.git" class="btn btn-outline btn-sm">GitHub</a>
-                            <a href="https://evg-mobile.vercel.app/welcome" class="btn btn-outline btn-sm">Visit Link</a>
+    <div id="menu" class="fas fa-bars"></div>
     
-                            </p>
-                    </div>
-                  </div>
-            </div>
-        </section>
 
-        <section class="experience">
-            <p class="titles">Experience </p>
-            <div class="row">
-                <div class="col-md-6 cprojects">
-                  <div class="excont1">
-                      <h4>GADS</h4>
-                      <p>Participated in the Google Africa Developer Scholarship Program where i studied Angular and node.js</p>
-                        <span>2020</span>
-                    </div>
+    <section class="home" id="home">
+        <h3>HI THERE !</h3>
+        <h1>I'M <span>Prince Darko</span></h1>
+        <p> A backend engineer. I build backend logic using node.js with the help of frameworks such
+             as express and nest.js but not limited to those two. I do frontend too with the help 
+            of angular which further leads me to building mobile apps when ionic smiles at me. I am currently 
+        learning Golang 🤎 </p>
+        <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+    </section>
+
+
+
+    <section class="about" id="about">
+        <h1 class="heading"><span>about </span>Me</h1>
+        <div class="row">
+            <div class="info">
+                <h3><span>name : </span> Prince Darko</h3>
+                <h3><span>age : </span> 22</h3>
+                <h3><span>post : </span> Back end developer</h3>
+                <h3><span>backend : </span> Node.js & Golang</h3>
+                <h3><span>frontend : </span> Angular & Ionic</h3>
+                <h3><span>Email : </span> padarko99@gmail.com</h3>
+                <h3><span>GitHub : </span> <a href="https://github.com/PrinceAcquahDarko">Prince</a></h3>
+                <h3><span>linkedin : </span> <a href="https://www.linkedin.com/in/prince-acquah-darko-95917817a/">Prince</a></h3>
+                <h3><span>Twitter : </span> <a href="https://twitter.com/kwamePrince_">Prince</a></h3>
+                <a href="#"><button class="btn">view resume</button></a>
+
+            </div>
+
+            <div class="counter">
+                <div class="box">
+                    <span>2+</span>
+                    <h3>years of experience</h3>
                 </div>
-                <div class="col-md-6 cprojects">
-                    <div class="excont2">
-                        <h4>Zuri Training</h4>
-                        <p>Enrolled in the backend track where i got to enhance my skills on node.js</p>
-                        <span>2021</span>
-                    </div>
-                  </div>
-            </div>
-        </section>
-
-        <section class="education">
-            <p class="titles">Education</p>
-            <div class="row">
-                <div class="col-md-6 cprojects">
-                  <div>
-                      <h4>Temasco</h4>
-                      <p>Senior High School Education at the Tema Secondary School</p>
-                        <span>2015-2018</span>
-                    </div>
+                <div class="box">
+                    <span>8+</span>
+                    <h3>projects completed</h3>
                 </div>
-                <div class="col-md-6 cprojects">
-                    <div>
-                        <h4>UDS</h4>
-                        <p>BSC Computer Science at the University for Development Studies</p>
-                        <span>2018-Present</span>
-                    </div>
-                  </div>
             </div>
-        </section>
-
-        <section class="education">
-            <p class="titles">Reach Me</p>
-            <div class="row">
-                <div class="col-md-6 cprojects reachme">
-                  <div>
-                      <h4>Email</h4>
-                      <p>padarko99@gmail.com</p>
-                        <h4>GitHub</h4>
-                        <p><a href="https://github.com/PrinceAcquahDarko">Prince</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6 cprojects reachme">
-                    <div>
-                        <h4>Twitter</h4>
-                        <p><a href="https://twitter.com/kwamePrince_">kwameprince</a></p>
-                        <h4>linkedin</h4>
-                        <p><a href="https://www.linkedin.com/in/prince-acquah-darko-95917817a/">Prince Darko Acquah</a></p>
-                    </div>
-                  </div>
-            </div>
-        </section>
-
-        
-    </main>
-    <footer>
-        <div>
-            <small>lots of love </small>
         </div>
-    </footer>
+    </section>
+
+    <section class="projects" id="projects">
+        <h3 class="heading">my <span>Projects</span></h3>
+        <div class="box-container">
+            <div class="box">
+               <img src="old/img/memz/1.png" alt=""> 
+               <div class="info">
+                   <h3>Membank</h3>
+                   <p>An app that allows users to upload and download memes. Built with angular, ionic and nest.js. <a href="https://github.com/PrinceAcquahDarko/memBank#readme">read more</a> or <a href="https://mbank.vercel.app/">view app</a></p>
+               </div>
+            </div>
+            <div class="box">
+                <img src="old/img/hos/2 (1).png" alt=""> 
+                <div class="info">
+                    <h3>Hospital Management App</h3>
+                    <p>An app that runs the day to day activites at the hospital example taking patients vitals and much more. Built with the MEAN stack <a href="https://github.com/PrinceAcquahDarko/HMA.git">read more</a> or <a href="https://hs-m.vercel.app/home">view app</a></p>
+
+                </div>
+             </div>
+             <div class="box">
+                <img src="old/img/evgweb/1.png" alt=""> 
+                <div class="info">
+                    <h3>Online Voting App</h3>
+                    <p>An app that allows departments in various institutions run elections. Built with the MEAN stack <a href="https://github.com/PrinceAcquahDarko/e_voting_backend.git">read more</a> or <a href="https://evg.vercel.app/">view app</a></p>
+                </div>
+             </div>
+             <div class="box">
+                <img src="old/img/evgm/1.png" alt=""> 
+                <div class="info">
+                    <h3>E-Health</h3>
+                    <p>An app built with the aim of letting users pay and chat with health personnel such as doctors. <a href="https://github.com/PrinceAcquahDarko/memBank#readme">read more</a> or <a href="https://mbank.vercel.app/">view app</a></p>
+                </div>
+             </div> 
+             <div class="box">
+                <img src="old/img/school/8.png" alt=""> 
+                <div class="info">
+                    <h3>School Management App</h3>
+                    <p>An app that runs the day to day activites at the Junior High School example generating terminal reports of students and much more <a href="https://github.com/PrinceAcquahDarko/BackEnd_SMA.git">read more</a> or <a href="https://sma-front-end.vercel.app/login">view app</a></p>
+
+                </div>
+             </div> 
+           
+             <div class="box">
+                <img src="old/img/evgm/1.png" alt=""> 
+                <div class="info">
+                    <h3>Online Voting App</h3>
+                    <p>the Online voting app rebuilt with ionic  <a href="https://github.com/PrinceAcquahDarko/memBank#readme">read more</a> or <a href="https://mbank.vercel.app/">view app</a></p>
+                </div>
+             </div> 
+        </div>
+    </section>
+
+    <section class="education" id="experience">
+        <h3 class="heading">my <span>Experience</span></h3>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2021</span>
+                <h3>Zuri Training</h3>
+                <p>Participated in the Zuri training program where i got the opportunity to work on app which enables users view hospital locations around them. I had the 
+                    opportunity to enhance my node.js skills
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2020</span>
+                <h3>Google Africa Developer Scholarship (GADS)</h3>
+                <p>Participated in the Google Africa Developer Scholarship program where i had the opportunity to work on an album app
+                     using angular. I also learnt node.js during the program.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h3 class="heading">my <span>education</span></h3>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2022</span>
+                <h3>University for Development Studies</h3>
+                <p>Pursuing a bachelor's degree in Computer Science</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2018</span>
+                <h3>Tema Secondary School</h3>
+                <p>Had my secondary school education where i studied General Science</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <a href="#home" class="top">
+        <img src="old/scroll-top-img.png" alt="">
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
