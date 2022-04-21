@@ -97,6 +97,10 @@ header{
 
 }
 
+.here{
+    text-transform: none;
+}
+
 .info > p a{
     color: #0000ee;
 }
