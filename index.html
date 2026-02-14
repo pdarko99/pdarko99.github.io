@@ -2,262 +2,349 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prince Darko</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+    <title>Prince Darko — Software Engineer</title>
+    <meta name="description" content="Portfolio of Prince Darko, a full-stack software engineer specializing in Angular, Node.js, and Java." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="user">
-        <img src="old/c0576711ce298da62b2b7ef0218ba7d9~2.jpg" alt="" />
-        <h3 class="name">Prince Darko</h3>
-        <p class="post">Software Engineer</p>
-      </div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#experience">experience</a></li>
-          <li><a href="#education">education</a></li>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+      <div class="nav__container">
+        <a href="#home" class="nav__logo">PD</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#education" class="nav__link">Education</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
-    <div id="menu" class="fas fa-bars"></div>
-
-    <section class="home" id="home">
-      <h3>HI THERE !</h3>
-      <h1>I'M <span>Prince Darko</span></h1>
-      <p>
-        Software engineer with strong experience in Angular, Node.js & Java for building robust and user-focused  applications.
-      </p>
-      <a href="#about"
-        ><button class="btn">about me <i class="fas fa-user"></i></button
-      ></a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__greeting">Hi there, I'm</p>
+          <h1 class="hero__title">Prince Darko</h1>
+          <p class="hero__subtitle">I build robust, user-focused applications with Angular, Node.js &amp; Java</p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="mailto:padarko99@gmail.com?subject=Request%20for%20Resume" class="btn btn--outline">Contact for Resume</a>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- About Section -->
     <section class="about" id="about">
-      <h1 class="heading"><span>about </span>Me</h1>
-      <div class="row">
-        <div class="info">
-          <h3><span>name : </span> Prince Acquah Darko</h3>
-          <h3><span>post : </span> Full stack developer</h3>
-          <h3><span>languages : </span> Javascript & Java</h3>
-          <h3><span>backend : </span> Node.js(express & nest) & Java(Spring)</h3>
-          <h3><span>frontend : </span> Angular & Ionic</h3>
-          <h3><span>Email : </span> padarko99@gmail.com</h3>
-          <h3><span>GitHub : </span> <a href="https://github.com/pdarko99">visit</a></h3>
-          <h3><span>linkedin : </span> <a href="https://www.linkedin.com/in/prince-acquah-darko-95917817a/">visit</a></h3>
-          <a href="https://drive.google.com/file/d/1l0eYTBEkXWXsThur86BoYztPvT3Vgq-2/view?usp=sharing"><button class="btn">view resume</button></a>
-        </div>
-
-        <div class="counter">
-          <div class="box">
-            <span>3+</span>
-            <h3>years of experience</h3>
+      <div class="container">
+        <h2 class="section__title fade-in">About Me</h2>
+        <div class="about__grid">
+          <div class="about__photo fade-in">
+            <img src="old/c0576711ce298da62b2b7ef0218ba7d9~2.jpg" alt="Prince Darko" />
           </div>
-          <div class="box">
-            <span>10+</span>
-            <h3>projects completed</h3>
+          <div class="about__info fade-in">
+            <p class="about__text">
+              Full-stack software engineer with 3+ years of experience building scalable web applications. I specialize in Angular, Node.js, and Java (Spring Boot), delivering clean, maintainable code and intuitive user experiences across healthcare, fintech, and e-commerce domains.
+            </p>
+            <div class="about__stats">
+              <div class="stat">
+                <span class="stat__number">3+</span>
+                <span class="stat__label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">10+</span>
+                <span class="stat__label">Projects Completed</span>
+              </div>
+            </div>
+            <div class="about__links">
+              <a href="https://github.com/pdarko99" target="_blank" rel="noopener" class="about__link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/prince-acquah-darko-95917817a/" target="_blank" rel="noopener" class="about__link">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="mailto:padarko99@gmail.com" class="about__link">
+                <i class="fas fa-envelope"></i> Email
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section__title fade-in">Tech Stack</h2>
+        <div class="skills__grid fade-in">
+          <div class="skills__category">
+            <h3 class="skills__heading">Frontend</h3>
+            <div class="skills__tags">
+              <span class="tag">Angular</span>
+              <span class="tag">Ionic</span>
+              <span class="tag">Vue.js</span>
+            </div>
+          </div>
+          <div class="skills__category">
+            <h3 class="skills__heading">Backend</h3>
+            <div class="skills__tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">NestJS</span>
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+            </div>
+          </div>
+          <div class="skills__category">
+            <h3 class="skills__heading">Database</h3>
+            <div class="skills__tags">
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MongoDb</span>
+            </div>
+          </div>
+          <div class="skills__category">
+            <h3 class="skills__heading">DevOps</h3>
+            <div class="skills__tags">
+              <span class="tag">Kubernetes</span>
+              <span class="tag">GitLab CI/CD</span>
+              <span class="tag">Rancher</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+          <div class="skills__category">
+            <h3 class="skills__heading">Other</h3>
+            <div class="skills__tags">
+              <span class="tag">REST APIs</span>
+              <span class="tag">JWT Auth</span>
+              <span class="tag">fabric.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
     <section class="projects" id="projects">
-      <h3 class="heading">Personal <span>Projects</span></h3>
-      <p style="background: linear-gradient(135deg, #ff9800, #f57c00); color: #fff; padding: 12px 20px; border-radius: 8px; text-align: center; max-width: 600px; margin: 10px auto 25px; font-size: 0.95rem; box-shadow: 0 2px 10px rgba(255, 152, 0, 0.3);">
-        <i class="fas fa-tools" style="margin-right: 8px;"></i>
-        <strong>Note:</strong> Some app APIs are currently down. Apps under maintenance - check back soon!
-      </p>
-      <div class="box-container">
-        <div class="box">
-          <img src="old/img/memz/1.png" alt="" />
-          <div class="info">
-            <h3>Membank</h3>
-            <p>
-              An app that allows users upload, download, like, add to fav a meme and much more. Built with angular, ionic and nest.js.
-              <a href="https://github.com/PrinceAcquahDarko/memBank/blob/main/README.md">read more</a> or
-              <a href="https://mbank.vercel.app/">view app</a>
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <img src="old/img/hos/2 (1).png" alt="" />
-          <div class="info">
-            <h3>Hospital Management App</h3>
-            <p>
-              An app that runs the day to day activites at the hospital example taking patients vitals and much more. Built with the MEAN stack
-              <a href="https://github.com/PrinceAcquahDarko/HMA.git">read more</a> or <a href="https://hs-m.vercel.app/home">view app</a>
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <img src="old/img/evgweb/3.png" alt="" />
-          <div class="info">
-            <h3>Online Voting App</h3>
-            <p>
-              An app that allows departments in various institutions run elections. Built with the MEAN stack
-              <a href="https://github.com/PrinceAcquahDarko/e_voting_backend.git">read more</a> or <a href="https://evg.vercel.app/">view app</a>
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <img src="old/fe.png" alt="" />
-          <div class="info">
-            <h3>E-Health</h3>
-            <p>
-              An app built with the aim of letting users pay and chat with health personnel such as doctors.
-              <a href="https://github.com/PrinceAcquahDarko/F-Ehealth#readme">read more</a> or
-              <a href="https://github.com/PrinceAcquahDarko/F-Ehealth#readme">view app</a>
-            </p>
-          </div>
-        </div>
-        <!-- <div class="box">
-          <img src="old/img/school/8.png" alt="" />
-          <div class="info">
-            <h3>School Management App</h3>
-            <p>
-              An app that runs the day to day activites at the Junior High School example generating terminal reports of students and much more
-              <a href="https://github.com/PrinceAcquahDarko/BackEnd_SMA.git">read more</a> or
-              <a href="https://sma-front-end.vercel.app/login">view app</a>
-            </p>
-          </div>
-        </div> -->
+      <div class="container">
+        <h2 class="section__title fade-in">Projects</h2>
 
-        <!-- <div class="box">
-          <img src="old/img/evgm/1.png" alt="" />
-          <div class="info">
-            <h3>Online Voting App</h3>
-            <p>
-              the Online voting app rebuilt with ionic <a href="https://github.com/PrinceAcquahDarko/memBank#readme">read more</a> or
-              <a href="https://mbank.vercel.app/">view app</a>
-            </p>
+        <!-- Featured Project: Tomato -->
+        <div class="featured fade-in">
+          <div class="featured__badge">Featured Project</div>
+          <div class="featured__content">
+            <div class="featured__gallery">
+              <img src="tomato/Screenshot%202026-02-14%20at%207.17.22%E2%80%AFPM.png" alt="Tomato - Login Page" />
+              <img src="tomato/Screenshot%202026-02-14%20at%207.17.55%E2%80%AFPM.png" alt="Tomato - Product Catalog" />
+              <img src="tomato/Screenshot%202026-02-14%20at%207.18.10%E2%80%AFPM.png" alt="Tomato - Admin Dashboard" />
+              <img src="tomato/Screenshot%202026-02-14%20at%207.18.44%E2%80%AFPM.png" alt="Tomato - Order Management" />
+            </div>
+            <div class="featured__info">
+              <h3 class="featured__title">Tomato — E-Commerce Platform</h3>
+              <p class="featured__desc">
+                A full-featured e-commerce platform with role-based access for admins and customers. Includes product management with image uploads, category-based filtering, shopping cart and checkout flow, order tracking with status management, and an admin dashboard with category analytics and revenue insights.
+              </p>
+              <div class="featured__tags">
+                <span class="tag tag--accent">Java</span>
+                <span class="tag tag--accent">Spring Boot</span>
+                <span class="tag tag--accent">Angular</span>
+                <span class="tag tag--accent">PostgreSQL</span>
+                <span class="tag tag--accent">JWT</span>
+              </div>
+              <div class="featured__features">
+                <span><i class="fas fa-check"></i> Admin Dashboard</span>
+                <span><i class="fas fa-check"></i> Product Management</span>
+                <span><i class="fas fa-check"></i> Order Tracking</span>
+                <span><i class="fas fa-check"></i> Category Analytics</span>
+              </div>
+              <div class="featured__actions">
+                <a href="https://tomato-sable-omega.vercel.app/auth/login" class="btn btn--primary" target="_blank" rel="noopener">View Live App</a>
+                <a href="https://github.com/pdarko99/tomato" class="btn btn--outline" target="_blank" rel="noopener"><i class="fab fa-github"></i> Frontend</a>
+                <a href="https://github.com/pdarko99/ecommerce-backend" class="btn btn--outline" target="_blank" rel="noopener"><i class="fab fa-github"></i> Backend</a>
+              </div>
+            </div>
           </div>
-        </div> -->
+        </div>
+
+        <!-- Personal Projects -->
+        <h3 class="projects__subtitle fade-in">Personal Projects</h3>
+        <div class="projects__grid fade-in">
+          <div class="card">
+            <img src="old/img/memz/1.png" alt="Membank" class="card__img" />
+            <div class="card__body">
+              <h4 class="card__title">Membank</h4>
+              <p class="card__text">Upload, download, like, and favorite memes. Built with Angular, Ionic, and NestJS.</p>
+              <a href="https://github.com/PrinceAcquahDarko/memBank/blob/main/README.md" class="card__link" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="old/img/hos/2 (1).png" alt="Hospital Management App" class="card__img" />
+            <div class="card__body">
+              <h4 class="card__title">Hospital Management</h4>
+              <p class="card__text">Manage day-to-day hospital activities including patient vitals tracking. Built with the MEAN stack.</p>
+              <a href="https://github.com/PrinceAcquahDarko/HMA.git" class="card__link" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="old/img/evgweb/3.png" alt="Online Voting App" class="card__img" />
+            <div class="card__body">
+              <h4 class="card__title">Online Voting</h4>
+              <p class="card__text">Run departmental elections in institutions securely. Built with the MEAN stack.</p>
+              <a href="https://github.com/PrinceAcquahDarko/e_voting_backend.git" class="card__link" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="old/fe.png" alt="E-Health" class="card__img" />
+            <div class="card__body">
+              <h4 class="card__title">E-Health</h4>
+              <p class="card__text">Pay and chat with health personnel such as doctors, all from one platform.</p>
+              <a href="https://github.com/PrinceAcquahDarko/F-Ehealth#readme" class="card__link" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Private/Client Projects -->
+        <h3 class="projects__subtitle fade-in">Client &amp; Company Projects</h3>
+        <div class="projects__grid fade-in">
+          <div class="card card--private">
+            <div class="card__body">
+              <div class="card__icon"><i class="fas fa-church"></i></div>
+              <h4 class="card__title">Event Management Portal</h4>
+              <p class="card__text">Comprehensive portal for managing church events, accommodations, catering, and payments with Paystack integration.</p>
+              <span class="card__company"><i class="fas fa-building"></i> BashTech Solutions</span>
+            </div>
+          </div>
+          <div class="card card--private">
+            <div class="card__body">
+              <div class="card__icon"><i class="fas fa-heartbeat"></i></div>
+              <h4 class="card__title">Patient Dashboard</h4>
+              <p class="card__text">Real-time patient data dashboard improving usability for doctors and patients on a healthcare platform.</p>
+              <span class="card__company"><i class="fas fa-building"></i> Teledokta</span>
+            </div>
+          </div>
+          <div class="card card--private">
+            <div class="card__body">
+              <div class="card__icon"><i class="fas fa-chart-bar"></i></div>
+              <h4 class="card__title">Analytics Dashboard</h4>
+              <p class="card__text">Radio mapping dashboard with authentication flow, visualization pages, and event engagement tracking.</p>
+              <span class="card__company"><i class="fas fa-building"></i> Advanced Radio Mapping</span>
+            </div>
+          </div>
+          <div class="card card--private">
+            <div class="card__body">
+              <div class="card__icon"><i class="fas fa-image"></i></div>
+              <h4 class="card__title">Image Frame Tool</h4>
+              <p class="card__text">Versatile image framing tool with cropping, rotating, and editing functionalities using fabric.js.</p>
+              <span class="card__company"><i class="fas fa-building"></i> Azguards Technolabs</span>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <h3 class="heading" style="margin-top: 4rem;">Private <span>Projects</span></h3>
-      <p style="text-align: center; color: #aaa; font-size: 1.4rem; max-width: 600px; margin: 10px auto 25px;">
-        Projects developed for companies and clients (details limited due to confidentiality)
-      </p>
-      <div class="box-container">
-        <div class="box" style="height: auto; padding: 2rem; background: #1a1a1a; border-radius: 1rem;">
-          <div class="info" style="height: auto;">
-            <h3><i class="fas fa-church" style="margin-right: 10px;"></i>Event Management Portal</h3>
-            <p style="font-size: 1.4rem;">
-              A comprehensive portal for managing church events, accommodations, catering, and payments. Built with Node.js, Vue.js, and Paystack integration.
-            </p>
-            <p style="font-size: 1.2rem; color: #888; margin-top: 5px;"><i class="fas fa-building" style="margin-right: 5px;"></i>BashTech Solutions</p>
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <h2 class="section__title fade-in">Experience</h2>
+        <div class="timeline fade-in">
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">Apr 2024 — Present</span>
+              <h3 class="timeline__role">Software Engineer</h3>
+              <p class="timeline__company">BashTech Solutions &middot; Ghana &middot; Onsite, Full-time</p>
+              <ul class="timeline__list">
+                <li>Designed and developed an event management portal for the Church of Pentecost using Node.js, Vue.js, and Paystack integration, enabling ministers to seamlessly reserve and pay for events, accommodations, catering services, and canteen orders</li>
+                <li>Collaborated on building a patient dashboard for Teledokta using Node.js, Angular, and RESTful APIs, displaying critical patient data in real-time and improving usability for doctors and patients</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="box" style="height: auto; padding: 2rem; background: #1a1a1a; border-radius: 1rem;">
-          <div class="info" style="height: auto;">
-            <h3><i class="fas fa-heartbeat" style="margin-right: 10px;"></i>Patient Dashboard</h3>
-            <p style="font-size: 1.4rem;">
-              Real-time patient data dashboard for healthcare platform, improving usability for doctors and patients. Built with Node.js, Angular, and RESTful APIs.
-            </p>
-            <p style="font-size: 1.2rem; color: #888; margin-top: 5px;"><i class="fas fa-building" style="margin-right: 5px;"></i>Teledokta</p>
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">May 2023 — Nov 2023</span>
+              <h3 class="timeline__role">Frontend Developer (Angular)</h3>
+              <p class="timeline__company">Advanced Radio Mapping &middot; Ireland &middot; Remote, Contract</p>
+              <ul class="timeline__list">
+                <li>Collaborated on the design and re-implementation of interfaces within the ARM dashboard, playing a key role in designing and building the authentication flow</li>
+                <li>Participated in the development of a user-friendly contact form page to facilitate event-related complaints</li>
+                <li>Built a visualization page in the ARM dashboard allowing clients to view engagements on various events</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="box" style="height: auto; padding: 2rem; background: #1a1a1a; border-radius: 1rem;">
-          <div class="info" style="height: auto;">
-            <h3><i class="fas fa-chart-bar" style="margin-right: 10px;"></i>Analytics Dashboard</h3>
-            <p style="font-size: 1.4rem;">
-              Radio mapping dashboard with authentication flow, visualization pages, and event engagement tracking. Built with Angular.
-            </p>
-            <p style="font-size: 1.2rem; color: #888; margin-top: 5px;"><i class="fas fa-building" style="margin-right: 5px;"></i>Advanced Radio Mapping</p>
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">Oct 2022 — May 2023</span>
+              <h3 class="timeline__role">Software Engineer</h3>
+              <p class="timeline__company">Azguards Technolabs &middot; India &middot; Remote, Full-time</p>
+              <ul class="timeline__list">
+                <li>Led the design and implementation of a robust service request app utilizing Angular, Node.js and PostgreSQL, delivering a seamless and efficient user experience</li>
+                <li>Designed and developed a versatile frame tool enabling users to frame images with multiple functionalities, including cropping and rotating, using fabric.js</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="box" style="height: auto; padding: 2rem; background: #1a1a1a; border-radius: 1rem;">
-          <div class="info" style="height: auto;">
-            <h3><i class="fas fa-image" style="margin-right: 10px;"></i>Image Frame Tool</h3>
-            <p style="font-size: 1.4rem;">
-              Versatile image framing tool with cropping, rotating, and editing functionalities. Built with JavaScript and fabric.js.
-            </p>
-            <p style="font-size: 1.2rem; color: #888; margin-top: 5px;"><i class="fas fa-building" style="margin-right: 5px;"></i>Azguards Technolabs</p>
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">Nov 2021 — Oct 2022</span>
+              <h3 class="timeline__role">Business Process Analyst</h3>
+              <p class="timeline__company">American Towers Corporation &middot; Ghana &middot; Hybrid, Contract</p>
+              <ul class="timeline__list">
+                <li>Designed and developed a highly effective Smartsheet process to track operations and maintenance of faulty lithium batteries on various sites</li>
+                <li>Implemented a user-friendly interface, enabling contractors on site to efficiently populate crucial information into the Smartsheet process</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="education" id="experience">
-      <h3 class="heading">my <span>Experience</span></h3>
-      <div class="box-container">
-        <div class="box">
-          <i class="fas fa-briefcase"></i>
-          <span>Apr 2024 - Present</span>
-          <h3>Software Engineer</h3>
-          <p style="text-align: left; margin-bottom: 10px;">BashTech Solutions, Ghana (Onsite, Full time)</p>
-          <ul style="text-align: left; padding-left: 20px; margin: 0; list-style: disc; color: #fff; font-size: 1.4rem;">
-            <li>Designed and developed an event management portal for the Church of Pentecost using Node.js, Vue.js, and Paystack integration, enabling ministers to seamlessly reserve and pay for events, accommodations, catering services, and canteen orders</li>
-            <li>Collaborated on building a patient dashboard for Teledokta using Node.js, Angular, and RESTful APIs, displaying critical patient data in real-time and improving usability for doctors and patients</li>
-          </ul>
-        </div>
-        <div class="box">
-          <i class="fas fa-briefcase"></i>
-          <span>May 2023 - Nov 2023</span>
-          <h3>Frontend Developer (Angular)</h3>
-          <p style="text-align: left; margin-bottom: 10px;">Advanced Radio Mapping, Ireland (Remote, Contract)</p>
-          <ul style="text-align: left; padding-left: 20px; margin: 0; list-style: disc; color: #fff; font-size: 1.4rem;">
-            <li>Collaborated on the design and re-implementation of interfaces within the ARM dashboard, playing a key role in designing and building the authentication flow</li>
-            <li>Participated in the development of a user-friendly contact form page to facilitate event-related complaints</li>
-            <li>Built a visualization page in the ARM dashboard allowing clients to view engagements on various events</li>
-          </ul>
-        </div>
-        <div class="box">
-          <i class="fas fa-briefcase"></i>
-          <span>Oct 2022 - May 2023</span>
-          <h3>Software Engineer</h3>
-          <p style="text-align: left; margin-bottom: 10px;">Azguards Technolabs, India (Remote, Full time)</p>
-          <ul style="text-align: left; padding-left: 20px; margin: 0; list-style: disc; color: #fff; font-size: 1.4rem;">
-            <li>Led the design and implementation of a robust service request app utilizing Angular, Node.js and PostgreSQL, delivering a seamless and efficient user experience</li>
-            <li>Designed and developed a versatile frame tool enabling users to frame images with multiple functionalities, including cropping and rotating, using fabric.js</li>
-          </ul>
-        </div>
-        <div class="box">
-          <i class="fas fa-briefcase"></i>
-          <span>Nov 2021 - Oct 2022</span>
-          <h3>Business Process Analyst</h3>
-          <p style="text-align: left; margin-bottom: 10px;">American Towers Corporation, Ghana (Hybrid, Contract)</p>
-          <ul style="text-align: left; padding-left: 20px; margin: 0; list-style: disc; color: #fff; font-size: 1.4rem;">
-            <li>Designed and developed a highly effective Smartsheet process to track operations and maintenance of faulty lithium batteries on various sites</li>
-            <li>Implemented a user-friendly interface, enabling contractors on site to efficiently populate crucial information into the Smartsheet process</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
+    <!-- Education Section -->
     <section class="education" id="education">
-      <h3 class="heading">my <span>education</span></h3>
-      <div class="box-container">
-        <div class="box">
-          <i class="fas fa-graduation-cap"></i>
-          <span>2022</span>
-          <h3>University for Development Studies (Ghana)</h3>
-          <p>Pursuing a bachelor's degree in Computer Science <a class="here" href="">here</a>.</p>
-        </div>
-        <div class="box">
-          <i class="fas fa-graduation-cap"></i>
-          <span>2018</span>
-          <h3>Tema Secondary School</h3>
-          <p>Had my secondary school education where I studied General Science</p>
+      <div class="container">
+        <h2 class="section__title fade-in">Education</h2>
+        <div class="education__grid fade-in">
+          <div class="education__card">
+            <div class="education__icon"><i class="fas fa-graduation-cap"></i></div>
+            <span class="education__year">2022</span>
+            <h3 class="education__school">University for Development Studies</h3>
+            <p class="education__detail">Bachelor's degree in Computer Science &middot; Ghana</p>
+          </div>
+          <div class="education__card">
+            <div class="education__icon"><i class="fas fa-graduation-cap"></i></div>
+            <span class="education__year">2018</span>
+            <h3 class="education__school">Tema Secondary School</h3>
+            <p class="education__detail">General Science</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <a href="#home" class="top">
-      <img src="old/scroll-top-img.png" alt="" />
-    </a>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__links">
+          <a href="https://github.com/pdarko99" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/prince-acquah-darko-95917817a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:padarko99@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="footer__copy">&copy; 2026 Prince Darko. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
