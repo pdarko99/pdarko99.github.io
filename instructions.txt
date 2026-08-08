@@ -1,0 +1,5 @@
+-- this is my portfolio website
+
+-- i am skilled in angular node and java
+
+-- how best do you think i can redesign my portfolio to attract hiring managers, CTOs and recruiters

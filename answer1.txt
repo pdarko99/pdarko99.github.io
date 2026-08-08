@@ -1,0 +1,11 @@
+-- yes i need a full rebuild
+
+-- i am skilled in angular, node and java i know kubernets, gitlab ci/cd, ranchar (you can help me format it clear for recruiters and all that)
+
+-- for projects okay i have a newly build project here -- https://tomato-sable-omega.vercel.app/auth/login
+
+-- you can find some images also here you can display for this new personal project and it is working live
+
+-- inside this directory (/Users/princedarko/Desktop/main/tickets/java/ecommerce) you can find a FUNCTIONALITY.md file which talks more about the project structer. you can view that and use it to build a nice detailed project since currently is the only live project i have
+
+-- find sample pictures of the projects here under ./tomato which is in the same directory as this answer1.txt file you currenlty reading
